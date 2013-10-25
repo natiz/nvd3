@@ -1,4 +1,3 @@
-
 nv.models.multiBarChart = function() {
   "use strict";
   //============================================================
@@ -184,7 +183,8 @@ nv.models.multiBarChart = function() {
       if (showControls) {
         var controlsData = [
           { key: 'Grouped', disabled: multibar.stacked() },
-          { key: 'Stacked', disabled: !multibar.stacked() }
+          { key: 'Stacked', disabled: !multibar.stacked() },
+          { key: 'By Month', disabled: multibar.stacked() },
         ];
 
         controls.width(controlWidth()).color(['#444', '#444', '#444']);
